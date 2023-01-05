@@ -21,9 +21,10 @@
 
     <xs:complexType name="times">
             <xs:sequence>
-                <xs:element name="times1" type="xs:long"/>
-                <xs:element name="times2" type="xs:long"/>
-                <xs:element name="times3" type="xs:long"/>
+                <xs:element name="dbDataFetchTime" type="xs:long"/>
+                <xs:element name="frontToBackEndTime" type="xs:long"/>
+                <xs:element name="backendResponseTime" type="xs:long"/>
+                <xs:element name="textsSimilarity" type="xs:double"/>
             </xs:sequence>
     </xs:complexType>
 </xs:schema>
