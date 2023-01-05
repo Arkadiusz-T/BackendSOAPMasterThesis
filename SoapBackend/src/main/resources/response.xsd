@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.dupa.pl/soapexample"
+           targetNamespace="http://www.dupa.pl/soapexample">
+
+    <xs:element name="getSoapTimes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="time1" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="times" type="tns:times"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="times">
+            <xs:sequence>
+                <xs:element name="times1" type="xs:long"/>
+                <xs:element name="times2" type="xs:long"/>
+                <xs:element name="times3" type="xs:long"/>
+            </xs:sequence>
+    </xs:complexType>
+</xs:schema>
