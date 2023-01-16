@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/BackendSOAPMasterThesis.iml" filepath="$PROJECT_DIR$/.idea/BackendSOAPMasterThesis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SoapBackend/SoapBackend.iml" filepath="$PROJECT_DIR$/SoapBackend/SoapBackend.iml" />
     </modules>
   </component>
 </project>
