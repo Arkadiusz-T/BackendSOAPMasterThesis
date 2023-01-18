@@ -44,7 +44,7 @@ import javax.xml.bind.annotation.XmlType;
     "czasWyslaniaRequestuZFrontendu",
     "dbmsType"
 })
-@XmlRootElement(name = "getSoapTimes")
+@XmlRootElement(name = "getSoapTimes", namespace = "http://www.dupa.pl/soapexample")
 public class GetSoapTimes {
 
     @XmlElement(required = true)
