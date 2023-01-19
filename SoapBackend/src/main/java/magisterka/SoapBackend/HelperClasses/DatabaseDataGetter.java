@@ -62,7 +62,7 @@ public class DatabaseDataGetter {
     private static PairOfTexts getTextsFromMySQL(String textsLength, String textsType){
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            String connectionString = "jdbc:mysql://localhost:3306/baza_tekstow";
+            String connectionString = "jdbc:mysql://localhost:3306/baza_tekstow?serverTimezone=UTC";
             Connection conn = DriverManager.getConnection(connectionString,"root", "Mysq.001464");
             Statement stmt = conn.createStatement();
             String sql = String.format("select tekst_%s from baza_tekstow.teksty_%s", textsType, textsLength);
